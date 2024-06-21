@@ -1,7 +1,11 @@
+import Hero from "./Hero";
+
+
 export default function Home() {
   return (
-    <main>
-      
-    </main>
+    <>
+      <Hero />
+      <h1>app</h1>
+    </>
   );
 }
