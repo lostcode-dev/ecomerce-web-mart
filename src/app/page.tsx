@@ -1,10 +1,11 @@
-import Hero from "@/components/Hero";
-import Header from "./Header";
-
+import Header from "./Header/page";
+import Hero from "./Hero/page"
+// import { GlobalStyle } from "@/styles/global";
 
 export default function Home() {
   return (
     <>
+      {/* <GlobalStyle /> */}
       <Header />
       <Hero />
       
