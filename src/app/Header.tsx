@@ -125,8 +125,13 @@ const Nav = styled.nav `
     @media (min-width: 768px) {
       display: flex;
       justify-content: center;      
-    }
+    }  
+  
 }
+
+  @media (min-width: 1024px) {
+      padding: 1rem 10rem;    
+    }
 `
 
 export default function Header() {  

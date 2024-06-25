@@ -7,6 +7,8 @@ const HeroSection = styled.section `
   color: #121212;
   min-height: calc(100vh - 92px);
 
+  
+
   @media (min-width: 768px) {
     min-height: calc(100vh - 97px);
   }
