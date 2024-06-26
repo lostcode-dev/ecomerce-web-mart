@@ -26,12 +26,15 @@ export const HeroSection = styled.section`
   @media (min-width: 768px) {
     background-position: 60% 0%;
     background-image: url("/heroFullImg.jpg");
-    padding: 0 5rem;
+    padding: 0 2rem;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
   }
   @media (min-width: 1024px) {
     background-position: 80%;
     padding: 0 10rem;
+    text-align: left;
     
   }
   @media (min-width: 1440px) {
@@ -41,7 +44,15 @@ export const HeroSection = styled.section`
 `;
 
 export const Container = styled.div`  
-  max-width: 1120px;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    max-width: 436px;    
+  }
+  @media (min-width: 1440px) {
+    width: 50%;
+    max-width: 532px;    
+  }
   
 `
 
@@ -52,6 +63,13 @@ export const BigCTA = styled.h1`
   font-weight: 500;
   line-height: 2.75rem;
   letter-spacing: -0.025rem;
+
+  @media (min-width: 1440px) {
+    font-size: 5rem;
+    line-height: 5.25rem;
+    letter-spacing: -0.1875rem;
+    
+  }
   
 `
 
@@ -64,6 +82,12 @@ export const SmallCTA = styled.p`
   font-weight: 400;
   line-height: 1.625rem;
   margin-bottom: 1rem;
+
+  @media (min-width: 1440px) {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: 1.75rem;    
+  }
 `
 
 export const ButtonCTA = styled.button`
@@ -75,4 +99,10 @@ export const ButtonCTA = styled.button`
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.5rem;
+
+  @media (min-width: 1440px) {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: -0.025rem;
+  }
 `
