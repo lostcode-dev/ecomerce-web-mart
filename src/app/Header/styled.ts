@@ -6,8 +6,8 @@ export const MainHeader = styled.header`
 `;
 
 export const NotificationBar = styled.div`
-  background-color: ${({ theme }) => theme.colors.neutral['07']};
-  color: ${({ theme }) => theme.colors.neutral['01']};
+  background-color: ${({ theme }) => theme.colors?.neutral['07']};
+  color: ${({ theme }) => theme.colors?.neutral['01']};
   padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-between;

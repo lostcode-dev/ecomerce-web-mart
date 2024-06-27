@@ -1,3 +1,5 @@
+'use client';
+
 import { faCircleUser } from '@fortawesome/free-regular-svg-icons';
 import {
   faAngleDown,
