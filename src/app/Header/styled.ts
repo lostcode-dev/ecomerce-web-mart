@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const MainHeader = styled.header`
   position: absolute;
-  width: 100%;  
+  width: 100%;
 `;
 
 export const NotificationBar = styled.div`
-  background: #141718;
-  color: #fefefe;
+  background-color: ${({ theme }) => theme.colors.neutral['07']};
+  color: ${({ theme }) => theme.colors.neutral['01']};
   padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -53,7 +53,6 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 
   > :first-child {
     display: flex;
@@ -67,7 +66,6 @@ export const Nav = styled.nav`
       }
     }
   }
-  
 
   @media (min-width: 1024px) {
     padding: 1rem 10rem;

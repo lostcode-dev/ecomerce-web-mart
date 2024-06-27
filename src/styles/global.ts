@@ -1,8 +1,13 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  :root {
-    --color-orange: #FFAB00;
+  * {
+    box-sizing: border-box ;   
   }
 
-`
+  body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+`;

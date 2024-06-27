@@ -1,40 +1,38 @@
-"use client";
-
+import { faCircleUser } from '@fortawesome/free-regular-svg-icons';
+import {
+  faAngleDown,
+  faArrowRight,
+  faBagShopping,
+  faBars,
+  faMagnifyingGlass,
+  faTicket,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   MainHeader,
-  NotificationBar,
   Nav,
-  NavSectionsGroup,
   NavIconsGroup,
-} from "./styled";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTicket,
-  faArrowRight,
-  faBars,
-  faBagShopping,
-  faAngleDown,
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
-import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
+  NavSectionsGroup,
+  NotificationBar,
+} from './styled';
 
 export default function Header() {
   const navSections = [
-    { content: "Home", icon: null },
-    { content: "Shop", icon: faAngleDown },
-    { content: "Product", icon: faAngleDown },
-    { content: "Contact Us", icon: null },
+    { content: 'Home', icon: null },
+    { content: 'Shop', icon: faAngleDown },
+    { content: 'Product', icon: faAngleDown },
+    { content: 'Contact Us', icon: null },
   ];
 
   const iconsGroup = [
     {
-      name: "search",
-      class: "hidden-md",
+      name: 'search',
+      class: 'hidden-md',
       icon: faMagnifyingGlass,
       count: null,
     },
-    { name: "user", class: "hidden-md", icon: faCircleUser, count: null },
-    { name: "cart", class: "bag-icon", icon: faBagShopping, count: 2 },
+    { name: 'user', class: 'hidden-md', icon: faCircleUser, count: null },
+    { name: 'cart', class: 'bag-icon', icon: faBagShopping, count: 2 },
   ];
 
   return (
